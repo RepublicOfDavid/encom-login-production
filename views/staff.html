@@ -1,0 +1,32 @@
+<div class="text-right">
+    <button class="form-login-submit-btn btn btn-logout" ng-click="logout()">Sign out</button>
+</div>
+<div class="container" ng-init="loginCheck()" ng-controller="StaffController">
+    <div class="row justify-content-md-center">
+        <div class="col-sm-12 col-md-12 col-lg-6">
+            <img class="staff-logo" src="/public/images/logo.jpg"/>
+        </div>
+    </div>
+    <div class="row justify-content-md-center">
+        <div class="col-sm-12 col-md-12 col-lg-6 staff-list" ng-init="getStaff()">
+            <h3 class="text-center">Staff</h3>
+            <ul ng-repeat="staff in staffList">
+                <li class="row">
+                    <div class="col-sm-12 col-md-4 col-lg-4">
+                        <img ng-src="{{staff.avatar}}"/>
+                    </div>
+                    <div class="col-sm-12 col-md-8 col-lg-8">
+                        <h5>{{ staff.first_name }} {{ staff.last_name }}</h5>
+                        <p>
+                            <a href="mailto:{{ staff.email }}">{{ staff.email }}</a>
+                        </p>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+
+
+

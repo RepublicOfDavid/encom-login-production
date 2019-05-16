@@ -1,0 +1,47 @@
+
+@import url('https://fonts.googleapis.com/css?family=Raleway');
+
+body {
+    background-color: #000;
+    color: #FFF;
+    font-family: 'Raleway', sans-serif;
+}
+
+img {
+    width: 100%;
+}
+
+.login-logo {
+    margin: 15% 0 0 0;
+}
+
+.form-group label {
+    color: #FFF;
+}
+
+.btn-login {
+    background-color: #02a5f4;
+    color: #FFF;
+}
+
+.btn-logout {
+    background-color: #02a5f4;
+    color: #FFF;
+    margin: 1%;
+}
+
+.staff-list h3, h5 {
+    color: #FFF;
+}
+
+.staff-list ul {
+    list-style: none; margin: 0; padding: 0;
+}
+
+.staff-list ul li {
+    margin: 5% 0;
+}
+
+.staff-list ul li p a {
+    color: #02a5f4;
+}
